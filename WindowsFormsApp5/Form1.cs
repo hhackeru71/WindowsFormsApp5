@@ -20,7 +20,7 @@ namespace WindowsFormsApp5
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             dt.Columns.Add("name", typeof(string));
-            dt.Columns.Add("age", typeof(Int32));
+            dt.Columns.Add("age", typeof(int));
         }
 
         private void button1_Click(object sender, EventArgs e)
