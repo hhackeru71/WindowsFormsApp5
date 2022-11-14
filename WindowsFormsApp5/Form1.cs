@@ -15,6 +15,8 @@ namespace WindowsFormsApp5
         public Form1()
         {
             InitializeComponent();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,10 +30,11 @@ namespace WindowsFormsApp5
                 dt.Rows.Add("yoav", 50);
                 dt.Rows.Add("md", 60);
                 dt.Rows.Add("asdsad", 70);
-                var a = dt.Rows.Count;// מספר השורות בטבלה                //
+                dataGridView1.DataSource = dt;
+               /* var a = dt.Rows.Count;// מספר השורות בטבלה      */          //
                 //dt.Rows.RemoveAt(0);
-                dt.Rows[0].SetField("name", "moshe");//עידכון
-                dt.Rows[0].SetField("age", 90);//עידכון
+                //dt.Rows[0].SetField("name", "moshe");//עידכון
+                //dt.Rows[0].SetField("age", 90);//עידכון
 
             }
             catch (Exception ex)
